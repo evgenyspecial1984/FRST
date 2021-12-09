@@ -17,6 +17,10 @@ body {
     -o-border-radius: 100px;
 }
 
+.main_date {
+    margin-left:180px;
+}
+
 .month{
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.381);
