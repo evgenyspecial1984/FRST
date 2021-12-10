@@ -45,3 +45,9 @@ body {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
+@media print {
+    .print-doc {
+    display:none;
+    }
+    }
