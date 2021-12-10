@@ -9,12 +9,12 @@
 </head>
 <body>
   <h2 class="main_title">Бланк расчета коммунальных платежей за месяц</h2>
-  <h4>Расчет коммунальных платежей и оплаты аренды жилого помещения произведен за</h4>
+  <h3>Расчет коммунальных платежей и оплаты аренды жилого помещения произведен за</h3>
   <div class="main_date">
     <select name="month" id="" class="month">
       <option value="mon1">Январь</option>
       <option value="mon2">Февраль</option>
-      <option value="mon3>Март</option>
+      <option value="mon3">Март</option>
       <option value="mon4">Апрель</option>
       <option value="mon5">Май</option>
       <option value="mon6">Июнь</option>
@@ -27,6 +27,69 @@
     </select>
     <input type="text" name="" id="" class="year">
   </div>
+  <div class="rent_title">
+    <h4>Аренда жилого помещения</h4>
+    <input type="text" name="" id="" class="rent">
+  </div>
+<div class="pay_block">
+    <div class="rent_title">
+      <h4 class="pay_item">Оплата газоснабжения</h4>
+      <input type="text" name="" id="" class="rent" placeholder="Текущие показания">
+      <p class="mathsings">-</p>
+      <input type="text" name="" id="" class="rent" placeholder="Предыдущие показания">
+      <p class="mathsings">X</p>
+      <input type="text" name="" id="" class="rent" placeholder="Тариф, руб/куб.м">
+    </div>
+    <div class="itog">
+      <h4>Итого</h4>
+      <input type="text" name="" id="" class="rent itog_in" >
+    </div>
+</div>
+
+<div class="pay_block">
+  <div class="rent_title">
+    <h4 class="pay_item">Оплата электроснабжения</h4>
+    <input type="text" name="" id="" class="rent" placeholder="Текущие показания">
+    <p class="mathsings">-</p>
+    <input type="text" name="" id="" class="rent" placeholder="Предыдущие показания">
+    <p class="mathsings">X</p>
+    <input type="text" name="" id="" class="rent" placeholder="Тариф, руб/куб.м">
+  </div>
+  <div class="itog">
+    <h4>Итого</h4>
+    <input type="text" name="" id="" class="rent itog_in" >
+  </div>
+</div>
+
+<div class="pay_block">
+  <div class="rent_title">
+    <h4 class="pay_item">Оплата водоснабжения</h4>
+    
+    <input type="text" name="" id="" class="rent" placeholder="Тариф, руб/куб.м">
+  </div>
+  <div class="itog">
+    <h4>Итого</h4>
+    <input type="text" name="" id="" class="rent itog_in" placeholder=>
+  </div>
+</div>
+
+<div class="pay_block">
+  <div class="rent_title">
+    <h4 class="pay_item">Оплата вывоз ТБО</h4>
+    
+    <input type="text" name="" id="" class="rent" placeholder="Тариф, руб/куб.м">
+  </div>
+  <div class="itog">
+    <h4>Итого</h4>
+    <input type="text" name="" id="" class="rent itog_in" >
+  </div>
+</div>
+
+<div class="itog">
+  <h2>Общая стоимость аренды жилого помещения</h2>
+  <input type="text" name="" id="" class="rent itog_in" >
+</div>
+
   <a class ="print-doc" href="javascript:(print());"> Распечатать</a>
 </body>
 </html>
