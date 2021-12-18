@@ -34,15 +34,15 @@
 <div class="pay_block">
     <div class="rent_title">
       <h4 class="pay_item">Оплата газоснабжения</h4>
-      <input type="text" name="" id="" class="rent" placeholder="Текущие показания">
+      <input type="text" name="" id="gas1" class="rent" placeholder="Текущие показания">
       <p class="mathsings">-</p>
-      <input type="text" name="" id="" class="rent" placeholder="Предыдущие показания">
+      <input type="text" name="" id="gas2" class="rent" placeholder="Предыдущие показания">
       <p class="mathsings">X</p>
-      <input type="text" name="" id="" class="rent" placeholder="Тариф, руб/куб.м">
+      <input type="text" name="" id="gas_tar" class="rent" placeholder="Тариф, руб/куб.м">
     </div>
     <div class="itog">
       <h4>Итого</h4>
-      <input type="text" name="" id="" class="rent itog_in" >
+      <input type="text" name="" id="itog_in" class="rent itog_in" >
     </div>
 </div>
 
@@ -91,5 +91,48 @@
 </div>
 
   <a class ="print-doc" href="javascript:(print());"> Распечатать</a>
+ 
+ <script>
+   //находим все инпуты
+const inputs = document.querySelectorAll('input');
+
+
+
+// создаем функцию отбора занчений
+function getGas11(){
+    const gas1 = document.getElementById('gas1');
+    const gas1_1 = parseFloat(gas1.value);
+    console.log(gas1_1);
+
+    return;
+}
+
+let qqq = getGas11();
+
+function getGas22(){
+    const gas2 = document.getElementById('gas2');
+    const gas2_2 = parseFloat(gas2.value);
+    console.log(gas2_2);
+    return;
+}
+
+let www = getGas22();
+
+function calculate(){
+  let itog = qqq - www;
+  console.log('itog');
+}
+// 
+inputs.forEach(function(item){
+    item.addEventListener('input', calculate);
+    
+});
+
+// 
+// inputs.forEach(function(item){
+//     item.addEventListener('input', getGas22);
+    
+// });
+ </script>
 </body>
 </html>
